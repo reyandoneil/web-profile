@@ -1,0 +1,5 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <path id="Path_6" data-name="Path 6" d="M54,0A54,54,0,1,1,0,54,54,54,0,0,1,54,0Z" transform="translate(108 108) rotate(180)" fill="#f54468"/>
+  <path id="Path_7" data-name="Path 7" d="M0,0H9L7.365,49H1.249Z" transform="translate(50 19)" fill="#fff"/>
+  <circle id="Ellipse_3" data-name="Ellipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(49 75)" fill="#fff"/>
+</svg>
