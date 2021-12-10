@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     height: 100vh;
-    background-color: #F3E4F3;
+
 `;
 
 export const ContactWraper = styled.div`

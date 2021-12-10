@@ -15,7 +15,7 @@ import {
 
 } from './HeroElements'
 
-import Ilustration from '../../Assets/peep-4.svg'
+import Ilustration from '../../Assets/oneil-img.svg'
 import ReyandImg from '../../Assets/reyand02.png' 
 
 

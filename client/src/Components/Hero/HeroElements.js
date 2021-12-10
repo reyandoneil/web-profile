@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     max-width: 100vw;
+    
+
    
 `;
 
@@ -39,10 +41,10 @@ export const HeroLeft = styled.div`
 export const Img = styled.img`
     /* margin-top:50px;
     margin-left: 250px; */
-    height:80%;
-    width: 90%;
-    object-fit: cover;
-    border-radius: 0px 0px 600px 600px;
+   
+    height:65%;
+    /* object-fit: cover; */
+    /* border-radius: 0px 0px 600px 600px; */
    `;
 
 export const ImageWraper = styled.div`
@@ -58,6 +60,9 @@ export const ImageWraper = styled.div`
 
     @media only screen and (max-width: 600px) {
         height: 50vh;
+        width: 100vh;
+        border-radius: 0px 0px 0px 0px;
+
     }
 `;
 

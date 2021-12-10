@@ -1,7 +1,7 @@
 import styled  from "styled-components";
 
 
-export const ButtonWraper = styled.a`
+export const ButtonWraper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
