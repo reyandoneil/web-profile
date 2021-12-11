@@ -26,7 +26,6 @@ import Button from '../Button/Button'
 
 function Hero() {
 
-  
     return (
         <>
             <Container id="home">

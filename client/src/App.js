@@ -6,6 +6,7 @@ import Modal from './Components/Modal/Modal'
 import Hero from './Components/Hero/Hero'
 import Portfolio from './Components/Portofolio/Portfolio'
 import Scroll from './Components/ScrollButton/ScrollButton'
+import SideNavbar from './Components/SideNavbar/SideNavbar'
 
 
 function App() {
@@ -46,18 +47,24 @@ function App() {
       }
       window.onoffline = (e) => {
         setStatusInternet(false);
-        console.log(e);
         setModalMessage({
           status: "Connection Lost",
           Message: e.type
         })
       } 
     },[statusInternet])
+
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+      setIsOpen(!isOpen)
+    }
+  
   return (
     <>
       <GlobalStyle/>
+      {isOpen && (<SideNavbar isOpen={isOpen} toggle={toggle} active={ navbar}/>) }
       <Scroll orientation={scrollTo}/>
-      <Navbar active={ navbar}/>
+      <Navbar active={ navbar} toggle={toggle}/>
       {statusInternet ? '' : <Modal text={modalMassage}/>}
       <Hero/>
       <Portfolio/>

@@ -37,27 +37,25 @@ export const HeroLeft = styled.div`
     align-items: center;
     justify-content: center;
     min-width: 45vw;
-
-    @media only screen and (max-width: 768px) {
-        /* max-width: 100vw; */
-    }
+     /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+  
     
 `;
 
 
 
 export const Img = styled.img`
-    /* margin-top:50px;
-    margin-left: 250px; */
-   
     height:65%;
     object-fit: cover;
-    /* border-radius: 0px 0px 600px 600px; */
-    @media only screen and (max-width: 768px) {
-        margin-top: 45px;
-
+    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+            margin-top     : 50px ;  
     }
-   `;
+    `;
 
 export const ImageWraper = styled.div`
     height: 100vh;
@@ -71,7 +69,7 @@ export const ImageWraper = styled.div`
     box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.53);
 
     @media only screen and (max-width: 768px) {
-        height: 65vh;
+        height: 62vh;
         border-radius: 0px 0px 0px 0px;
         width: 100vw;
         box-shadow: none;
@@ -143,6 +141,7 @@ export const Paragraf = styled.p `
 
 export const ButtonWraper = styled.div`
     align-self: flex-end;
+
     @media only screen 
         and (min-device-width: 375px) 
         and (max-device-width: 667px) 
@@ -154,12 +153,12 @@ export const ButtonWraper = styled.div`
     /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+    @media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
 
-}
+    }
 `;
 
 

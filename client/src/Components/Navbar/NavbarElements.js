@@ -2,34 +2,26 @@ import styled from "styled-components";
 import { Link } from 'react-scroll'
 
 export const Container = styled.nav`
-    /* display: flex; */
     position: fixed;
     background-color: transparant;
-    width: 100vw;
+    max-width: 100vw;
 
     ${({ active }) => active && ` 
     background: white; 
     Transition:0.3s all linear;`}
 
-    @media only screen and (max-width: 768px) {
-            /* background-color: white; */
-
-        }
-
-    
-
 `;
 export const NavBarWraper = styled.div`
-  height: 80px;
-  margin-left: 80px;
-  margin-right: 80px;
-  display: flex;
-  @media only screen and (max-width: 768px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 60px;
-    
-        }
+    height: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+
+    @media only screen and (max-width: 768px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 60px;
+            }
 `;
 
 
@@ -90,7 +82,7 @@ export const SwitchButtonWraper = styled.div`
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {
-          display: none;
+        display: none;
     }
     
 `;
@@ -98,6 +90,17 @@ export const SwitchButtonWraper = styled.div`
 export const MobileIcon = styled.img`
     height: 20px;
     cursor: pointer;
+
+    `;
+
+export const MobileIconWraper = styled.div` 
+    @media screen 
+        and (min-device-width: 1200px) 
+        and (max-device-width: 1600px) 
+        and (-webkit-min-device-pixel-ratio: 1) {
+            display :none ;
+        }
+
 `;
 
 

@@ -7,7 +7,8 @@ import {
     NavMenu,
     SwitchButtonWraper,
     NavBarWraper,
-    MobileIcon
+    MobileIcon,
+    MobileIconWraper
 } from './NavbarElements'
 import { links } from '../../data'
 import SwitchButton from '../SwitchButton/SwitchButton'
@@ -16,14 +17,13 @@ import BurgerIcon from '../../Assets/mobileIcon.svg'
 import BurgerIconP from '../../Assets/mobileIcon-p.svg'
 
 
-function Navbar({ active }) {
+function Navbar({ active, toggle }) {
     const { t } = useTranslation()
     const [value, setValue] = useState(false)
     return (
 
         <Container active={active} >
             <NavBarWraper>
-
                 <LeftNav>
                     ini logo
                 </LeftNav>
@@ -48,12 +48,14 @@ function Navbar({ active }) {
                             handleToggle={() => setValue(!value)}
                         />
                     </SwitchButtonWraper>
-                    {active 
-                    ? 
-                    <MobileIcon src={BurgerIconP}/>
-                    :
-                    <MobileIcon src={BurgerIcon}/>
-                    }
+                    <MobileIconWraper>
+                        {active
+                            ?
+                            <MobileIcon src={BurgerIconP} onClick={toggle} />
+                            :
+                            <MobileIcon src={BurgerIcon} onClick={toggle} />
+                        }
+                    </MobileIconWraper>
                 </RightNav>
             </NavBarWraper>
         </Container>
