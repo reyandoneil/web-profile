@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export const Container = styled.nav`
-    display: flex  ;
+    /* display: flex; */
     position: fixed;
     background-color: transparant;
     width: 100vw;
@@ -11,27 +11,43 @@ export const Container = styled.nav`
     background: white; 
     Transition:0.3s all linear;`}
 
-    @media only screen and (max-width: 600px) {
-            display: none;
+    @media only screen and (max-width: 768px) {
+            /* background-color: white; */
+
         }
+
+    
 
 `;
 export const NavBarWraper = styled.div`
+  height: 80px;
   margin-left: 80px;
   margin-right: 80px;
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    
+        }
 `;
+
 
 export const LeftNav = styled.div`
     height: 100%;
-    width: 50%;
+    width: 50vw;
 `;
 
 export const RightNav = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    width: 50%;
+    width: 50vw;
+    @media only screen and (max-width: 768px) {
+        width: 100vw;
+        justify-content: flex-end;
+
+        }
 `;
 
 export const NavMenu = styled.div`
@@ -41,6 +57,10 @@ export const NavMenu = styled.div`
     justify-content: center;
     align-items: center;
     width:80%;
+
+    @media only screen and (max-width: 768px) {
+            display: none;
+        }
 `;
 
 export const NavButton = styled(Link)`
@@ -64,7 +84,20 @@ export const Logo = styled.img`
 `;
 
 export const SwitchButtonWraper = styled.div`
-    
+    display: flex;
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+          display: none;
+    }
     
 `;
+
+export const MobileIcon = styled.img`
+    height: 20px;
+    cursor: pointer;
+`;
+
 
