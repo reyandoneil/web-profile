@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
     SideBarContainer,
     NavMenu,
@@ -17,12 +17,15 @@ import { useTranslation } from 'react-i18next'
 
 
 export default function SideNavbar({ toggle, isOpen }) {
-    const [value, setValue] = useState()
-    console.log(value, 'sidebar');
+    const [value, setValue] = useState(false)
     const { t } = useTranslation()
+   
+    const handleToggle = (e) => {
+        setValue(!value)
+    }
 
     return (
-        <SideBarContainer isOpen={isOpen}>
+        <SideBarContainer  isOpen={isOpen}>
             <NavMenu>
                 <TopMenu>
                     <CloseIcon src={CloseBtn} onClick={toggle} />
@@ -41,7 +44,7 @@ export default function SideNavbar({ toggle, isOpen }) {
                 <BottomMenu>
                     <SwitchButton
                         isOn={value}
-                        handleToggle={() => setValue(!value)}
+                        handleToggle={handleToggle}
                     />
                     <Text>ENG</Text>
                 </BottomMenu>

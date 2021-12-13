@@ -18,10 +18,10 @@ function SwitchButton({ handleToggle, isOn }) {
             i18n.changeLanguage('eng')
         }
     }, [i18n, isOn])
-    console.log( isOn, '<-----------');
+    
     return (
         <>
-            <CheckBoxWraper data-tip data-for="registerTip">
+            <CheckBoxWraper data-tip data-for="translate">
                 <CheckBox
                     id="checkbox"
                     type="checkbox"
@@ -31,7 +31,7 @@ function SwitchButton({ handleToggle, isOn }) {
                 />
                 <CheckBoxLabel htmlFor="checkbox" />
                 <ReactTooltip
-                    id="registerTip"
+                    id="translate"
                     place="top"
                     effect="solid"
                     backgroundColor="#D591D8"

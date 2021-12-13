@@ -8,7 +8,7 @@ export const Container = styled.nav`
 
     ${({ active }) => active && ` 
     background: white; 
-    Transition:0.3s all linear;`}
+    transition: 0.3s all linear;`}
 
 `;
 export const NavBarWraper = styled.div`
@@ -19,40 +19,46 @@ export const NavBarWraper = styled.div`
 
     @media only screen and (max-width: 768px) {
         margin-left: 20px;
-        margin-right: 20px;
-        height: 60px;
-            }
+        margin-right: 30px;
+        }
 `;
 
 
 export const LeftNav = styled.div`
     height: 100%;
     width: 50vw;
-`;
+    display: flex;
+    align-items: center;
+
+    `;
+
+export const LogoImg = styled.img` 
+    height: 40px;
+    display: none;
+    ${({ active }) => active && ` 
+        display :flex;`}
+`
 
 export const RightNav = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50vw;
-    @media only screen and (max-width: 768px) {
-        width: 100vw;
-        justify-content: flex-end;
-
+    @media only screen and (max-width: 1073px) {
+            justify-content: flex-end;
         }
-`;
+    `;
 
 export const NavMenu = styled.div`
-    /* position: fixed; */
     display: flex;
-    
     justify-content: center;
     align-items: center;
     width:80%;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1073px) {
             display: none;
         }
+    
 `;
 
 export const NavButton = styled(Link)`
@@ -77,28 +83,22 @@ export const Logo = styled.img`
 
 export const SwitchButtonWraper = styled.div`
     display: flex;
-    @media only screen 
-        and (min-device-width: 320px) 
-        and (max-device-width: 568px)
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: portrait) {
-        display: none;
-    }
+
+    @media only screen and (max-width: 1073px) {
+            display: none;
+        }
     
 `;
 
 export const MobileIcon = styled.img`
     height: 20px;
     cursor: pointer;
+    `;   
 
-    `;
-
-export const MobileIconWraper = styled.div` 
-    @media screen 
-        and (min-device-width: 1200px) 
-        and (max-device-width: 1600px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-            display :none ;
+export const MobileIconWraper = styled.div`
+    display: none;
+    @media only screen and (max-width: 1073px) {
+            display: flex;
         }
 
 `;

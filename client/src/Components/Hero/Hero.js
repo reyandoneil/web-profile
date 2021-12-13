@@ -37,8 +37,7 @@ function Hero() {
                     </HeroLeft>
                     <HeroRight>
                         <Name>Reyand Oneil</Name>
-                        <Title1>React</Title1>
-                        <Title2>Developer</Title2>
+                        <Title1>React Developer</Title1>
                         <Paragraf>LoElit laborum veniam nisi consequat veniam 
                             eu voluptate consectetur pariatur eiusmod nostrud 
                             cillum laborum. Quis nulla excepteur velit sunt ad.

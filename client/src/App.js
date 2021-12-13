@@ -58,7 +58,9 @@ function App() {
     const toggle = () => {
       setIsOpen(!isOpen)
     }
-  
+    const so = window.screen.orientation
+
+    console.log(so, 'screen orientation');
   return (
     <>
       <GlobalStyle/>
