@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     max-width: 100vw;
     
+    
 `;
 
 export const HeroWraper = styled.div`
@@ -11,6 +12,7 @@ export const HeroWraper = styled.div`
     margin-left    : 80px ;
     margin-right: 80px;
     align-items: center;
+
     /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
     @media only screen 
         and (min-device-width: 320px) 
@@ -38,21 +40,15 @@ export const HeroLeft = styled.div`
     justify-content: center;
     min-width: 45vw;
 
-    @media only screen and (max-width: 768px) {
-        /* max-width: 100vw; */
-    }
-    
+   
 `;
 
 
 
 export const Img = styled.img`
-    /* margin-top:50px;
-    margin-left: 250px; */
-   
     height:65%;
     object-fit: cover;
-    /* border-radius: 0px 0px 600px 600px; */
+
     @media only screen and (max-width: 768px) {
         margin-top: 45px;
 
