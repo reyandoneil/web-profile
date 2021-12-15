@@ -7,25 +7,30 @@ import {
     NavMenu,
     SwitchButtonWraper,
     NavBarWraper,
-    MobileIcon
+    MobileIcon,
+    MobileIconWraper,
+    LogoImg
 } from './NavbarElements'
 import { links } from '../../data'
 import SwitchButton from '../SwitchButton/SwitchButton'
 import { useTranslation } from 'react-i18next'
 import BurgerIcon from '../../Assets/mobileIcon.svg'
 import BurgerIconP from '../../Assets/mobileIcon-p.svg'
+import Logo from '../../Assets/ORGE.svg'
 
 
-function Navbar({ active }) {
+function Navbar({ active, toggle }) {
     const { t } = useTranslation()
     const [value, setValue] = useState(false)
+    const handleToggle = (e) => {
+        setValue(!value)
+    }
     return (
 
         <Container active={active} >
             <NavBarWraper>
-
                 <LeftNav>
-                    ini logo
+                    <LogoImg src={Logo}  active={active}/>
                 </LeftNav>
                 <RightNav>
                     <NavMenu>
@@ -45,15 +50,17 @@ function Navbar({ active }) {
                     <SwitchButtonWraper >
                         <SwitchButton
                             isOn={value}
-                            handleToggle={() => setValue(!value)}
+                            handleToggle={handleToggle}
                         />
                     </SwitchButtonWraper>
-                    {active 
-                    ? 
-                    <MobileIcon src={BurgerIconP}/>
-                    :
-                    <MobileIcon src={BurgerIcon}/>
-                    }
+                    <MobileIconWraper>
+                        {active
+                            ?
+                            <MobileIcon src={BurgerIconP} onClick={toggle} />
+                            :
+                            <MobileIcon src={BurgerIcon} onClick={toggle} />
+                        }
+                    </MobileIconWraper>
                 </RightNav>
             </NavBarWraper>
         </Container>
