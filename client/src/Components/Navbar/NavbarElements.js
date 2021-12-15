@@ -18,9 +18,14 @@ export const NavBarWraper = styled.div`
     display: flex;
 
     @media only screen and (max-width: 768px) {
-        margin-left: 20px;
-        margin-right: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
         }
+    @media only screen and (max-width: 608px) {
+        margin-left: 25px;
+        margin-right: 25px;
+        }
+
 `;
 
 
