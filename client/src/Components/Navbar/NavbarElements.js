@@ -39,6 +39,7 @@ export const LeftNav = styled.div`
 
 export const LogoImg = styled.img` 
     height: 40px;
+    width: 100px;
     display: none;
     ${({ active }) => active && ` 
         display :flex;`}

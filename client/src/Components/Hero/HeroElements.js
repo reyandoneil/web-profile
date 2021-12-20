@@ -97,6 +97,7 @@ export const ImageWraper = styled.div`
     border-radius: 0px 0px 600px 600px;
     box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.53);
 
+
     @media only screen and (max-width: 600px) {
         border-radius: 0px;
         width: 100%;
@@ -138,7 +139,6 @@ export const HeroRight = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* background-color: lightyellow; */
 
     @media only screen and (max-width: 600px) {
         padding-top: 30px;
