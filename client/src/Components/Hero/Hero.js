@@ -6,7 +6,6 @@ import {
     HeroWraper,
     Name,
     Title1,
-    Title2,
     Paragraf,
     ImageWraper,
     ButtonWraper,

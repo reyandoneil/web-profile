@@ -34,14 +34,22 @@ export const PorfolioLinks = [
         url: 'https://moviedb-350dd.web.app/',
         title: "Layar Tancap App",
         sourceCodeLink: "https://lnkd.in/g-Pwe77",
-        img: LayarTancap
+        img: LayarTancap,
+        overview:[{
+            description : 'lorem opsum dfdf;ld dfdsfdsf ojofasdoij sdfopkdsf sdplkdfkpdsfpl sdlpkdlpfk sdpkdspfk pksdfpkpsd fdslpkfdslpkfpoi[dj sdf[mk,lkmjcb m',
+            apiLink:'http://localhost/3000'
+        }]
     },
     {
         id:2,
         url: 'https://lnkd.in/g9gHVV2',
         title: "Simple Covid 19 App",
-        sourceCodeLink: "https://lnkd.in/g-Pwe77",
-        img: CovidImg
+        sourceCodeLink: "https://github.com/reyandoneil/covid-19-react",
+        img: CovidImg,
+        overview:[{
+            description : 'lorem opsum dfdf;ld dfdsfdsf ojofasdoij sdfopkdsf sdplkdfkpdsfpl sdlpkdlpfk sdpkdspfk pksdfpkpsd fdslpkfdslpkfpoi[dj sdf[mk,lkmjcb mber',
+            apiLink:'https://api.covid19api.com/'
+        }]
     }
    
 ]

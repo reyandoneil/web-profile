@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
     height: 100vh;
     max-width: 100vw;
     
@@ -22,10 +23,11 @@ export const ContactWraper = styled.div`
 
 export const LeftContent = styled.div` 
     height: 100%;
-    width: 20%;
+    width: 30%;
     display: flex;
+    flex-direction: column;
+   
     justify-content: center;
-    align-items: center;
     @media only screen and (max-width: 600px) {
        height: 30%;
        width: 100%;
@@ -43,7 +45,7 @@ export const Title = styled.div`
 
 export const RightContent = styled.div` 
     height: 100%;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,12 +59,12 @@ export const RightContent = styled.div`
     
     `;
 
-export const CardPortfolio = styled.a`
+export const CardPortfolio = styled.div`
     text-decoration: none;
-    height:50vh;
-    width: 15vw;
+    height:36vh;
+    width: 12vw;
     margin: 20px;
-    cursor: pointer;
+    border-radius: 10px;
     transition: all .2s ease-in-out; 
     box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.53);
 
@@ -84,28 +86,38 @@ export const Top = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+
 
 
 `;
 
 export const Bottom = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding: 10px;
 `;
 
 export const PortfolioTitle = styled.span`
     font-size: 1.3vw;
-    color: black;
-    /* color: #D591D8;  */
+    /* color: black; */
+    color: #D591D8; 
 
     text-decoration: none;
 `;
 
 export const Img = styled.img`
-    height: 20%;
+    height: 30%;
 
     @media only screen and (max-width: 600px) {
         height: 20%;
 
     }
+    
+`;
+
+export const Paragraph = styled.span`
     
 `;

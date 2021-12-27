@@ -16,7 +16,7 @@ import SwitchButton from '../SwitchButton/SwitchButton'
 import { useTranslation } from 'react-i18next'
 import BurgerIcon from '../../Assets/mobileIcon.svg'
 import BurgerIconP from '../../Assets/mobileIcon-p.svg'
-import Logo from '../../Assets/ORGE.svg'
+import Logo from '../../Assets/ONEIL.svg'
 
 
 function Navbar({ active, toggle }) {

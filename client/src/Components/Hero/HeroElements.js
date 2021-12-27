@@ -205,18 +205,25 @@ export const Paragraf = styled.p `
     font-size: 1.2vw;
     margin-top: 30px;
     color: #707070;
+    margin-bottom: 20vh;
 
     @media only screen and (max-width: 600px) {
         font-size: 3vw;
         margin-top: 15px;
+        margin-bottom: 0;
+
     }
 
     @media only screen and (maX-width: 768px) {
         font-size: 3vw;
+        margin-bottom: 3vh;
+
     }
 
     @media only screen and (maX-width: 992px) {
         font-size: 3vw;
+        margin-bottom: 5vh;
+
     }
 `;
 
