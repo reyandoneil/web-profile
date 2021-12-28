@@ -22,9 +22,10 @@ import Logo from '../../Assets/ONEIL.svg'
 function Navbar({ active, toggle }) {
     const { t } = useTranslation()
     const [value, setValue] = useState(false)
-    const handleToggle = (e) => {
+    const handleToggle = () => {
         setValue(!value)
     }
+    console.log(active,'active');
     return (
 
         <Container active={active} >

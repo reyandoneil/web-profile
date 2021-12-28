@@ -35,10 +35,8 @@ export const LeftContent = styled.div`
 `;
 
 export const Title = styled.div`
-    color: #D591D8; 
     font-size: 5vh;
-    font-weight: bold;
-    border-bottom: 2px;
+    border-bottom: 1vh;
     
     
 `;
@@ -119,5 +117,6 @@ export const Img = styled.img`
 `;
 
 export const Paragraph = styled.span`
-    
+    font-size: 1.2vw;
+    color: #707070;
 `;

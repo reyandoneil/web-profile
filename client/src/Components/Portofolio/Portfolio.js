@@ -14,8 +14,10 @@ import {
 } from './PortfolioElement'
 import {PorfolioLinks} from '../../data'
 import LinkButton from '../LinkButton/LinkButton'
+import {useTranslation} from 'react-i18next'
 
 function Portfolio() {
+    const {t} = useTranslation()
     return (
     <>
        <Container id='portfolio'>
@@ -25,7 +27,7 @@ function Portfolio() {
                        Portfolio
                    </Title>
                    <Paragraph>
-                       Enim nisi culpa laboris commodo reprehenderit commodo aute ad commodo laborum consequat ut. Tempor aliqua et tempor consectetur exercitation magna mollit aute velit. 
+                       {t(`HERO.Some examples of learning using react libraries such as Redux, Styled-component, Reactrouter and others.`)}
                    </Paragraph>
                </LeftContent>
                <RightContent>

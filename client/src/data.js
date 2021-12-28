@@ -1,5 +1,7 @@
 import CovidImg from './Assets/COVID-19.svg'
 import LayarTancap from './Assets/layarTancap.svg'
+import hactive8 from './Assets/hactive8.png' 
+import permata from './Assets/permata.png'
 
 export const links = [
     {
@@ -52,4 +54,15 @@ export const PorfolioLinks = [
         }]
     }
    
+]
+
+export const aboutCards = [
+    {
+        id:1,
+        img: hactive8
+    },
+    {
+        id:2,
+        img: permata
+    }
 ]

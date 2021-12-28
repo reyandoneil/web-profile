@@ -10,20 +10,16 @@ import {
     ImageWraper,
     ButtonWraper,
     Img,
-
-
 } from './HeroElements'
-
 import Ilustration from '../../Assets/oneil-img.svg'
-
-
 import Button from '../Button/Button'
+import { useTranslation } from 'react-i18next'
 
 
 
 
 function Hero() {
-
+    const { t } = useTranslation()
     return (
         <>
             <Container id="home">
@@ -36,9 +32,7 @@ function Hero() {
                     <HeroRight>
                         <Name>Reyand Oneil</Name>
                         <Title1>React Developer</Title1>
-                        <Paragraf>LoElit laborum veniam nisi consequat veniam 
-                            eu voluptate consectetur pariatur eiusmod nostrud 
-                            cillum laborum. Quis nulla excepteur velit sunt ad.
+                        <Paragraf>{t(`HERO.I'm a junior software engineer full stack of immersive JavaScript background, I'm always open to new things, have a growth mindset and a hard worker.`)}
                         </Paragraf>
                         <ButtonWraper>
                             <Button text={'Download CV'}/>  

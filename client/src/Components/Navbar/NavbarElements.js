@@ -5,6 +5,7 @@ export const Container = styled.nav`
     position: fixed;
     background-color: transparant;
     max-width: 100vw;
+    z-index: 99;
 
     ${({ active }) => active && ` 
     background: white; 

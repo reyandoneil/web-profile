@@ -7,9 +7,11 @@ import Hero from './Components/Hero/Hero'
 import Portfolio from './Components/Portofolio/Portfolio'
 import Scroll from './Components/ScrollButton/ScrollButton'
 import SideNavbar from './Components/SideNavbar/SideNavbar'
+import ContactUs from './Components/ContactUs/ContactUs'
 import Footer from './Components/Footer/Footer.js'
 import PopUp from './Components/PopupModal/PopupModal'
 import {useSelector} from 'react-redux'
+import About from './Components/About/About'
 
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
   const [scrollTo, setScrollTo] = useState(false) 
 
   const changeBackgroundNavbar = () => {
-    if(window.scrollY > 120){
+    if(window.scrollY > 20){
       setNavbar(true)
     } else {
       setNavbar(false)
@@ -71,12 +73,14 @@ function App() {
     <>
       <GlobalStyle/>
       {isPopup && (<PopUp/>)}
-      {isOpen && (<SideNavbar isOpen={isOpen} toggle={toggle} active={ navbar}/>) }
+      {isOpen && (<SideNavbar isOpen={isOpen} toggle={toggle} active={navbar}/>) }
       <Scroll orientation={scrollTo}/>
       <Navbar active={navbar} toggle={toggle}/>
       {statusInternet ? null : <Modal text={modalMassage}/>}
       <Hero/>
       <Portfolio/>
+      <About/>
+      <ContactUs/>
       <Footer/>
     </>
   );
