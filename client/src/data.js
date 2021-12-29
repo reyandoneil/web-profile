@@ -2,6 +2,10 @@ import CovidImg from './Assets/COVID-19.svg'
 import LayarTancap from './Assets/layarTancap.svg'
 import hactive8 from './Assets/hactive8.png' 
 import permata from './Assets/permata.png'
+import react from './Assets/react.svg'
+import redux from './Assets/redux.svg'
+import git from './Assets/git.svg'
+
 
 export const links = [
     {
@@ -59,10 +63,29 @@ export const PorfolioLinks = [
 export const aboutCards = [
     {
         id:1,
-        img: hactive8
+        img: hactive8,
+        type: 'Education',
+        date: 'Graduate : Oct 2020'
     },
     {
         id:2,
-        img: permata
+        img: permata,
+        type: 'Job Experience',
+        date: 'Feb - Agust 2021'
+    }
+]
+
+export const stackImg = [
+    {
+        id:1,
+        img:react
+    },
+    {
+        id:2,
+        img:redux
+    },
+    {
+        id:3,
+        img:git
     }
 ]

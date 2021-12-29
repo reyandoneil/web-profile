@@ -21,7 +21,7 @@ export const InputTexts = styled.input`
     color: black;
 
     @media only screen and (max-width: 600px) {
-        margin-right: 0vw;
+        margin-right:0vw;
         
     }
 

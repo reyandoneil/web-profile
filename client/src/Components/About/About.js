@@ -1,24 +1,40 @@
 import React from 'react'
 import {
     Container,
-    AboutWraper
+    AboutWraper,
+    ReactStack,
+    AboutCard
 } from './ElementsAbout'
 
 import Card from '../AboutCard/AboutCard'
-import {aboutCards} from '../../data'
+import {
+    aboutCards,
+    stackImg
+} from '../../data'
+import Icons from '../Icons/Icons'
 function About() {
-    console.log(aboutCards ,'ini datanya');
     return (
         <Container id='about'>
             <AboutWraper>
-                {aboutCards.map(card => {
-                 return <Card
-                    key={card.id}
-                    src={card.img}
-                 >
+                <ReactStack>
+                    {stackImg.map(icon => {
+                        return <Icons 
+                        key={icon.id}
+                        img={icon.img}/>
+                    })}
+                </ReactStack>
+                <AboutCard>
+                    {aboutCards.map(card => {
+                    return <Card
+                        key={card.id}
+                        src={card.img}
+                        title={card.type}
+                        date={card.date}
+                    >
 
-                 </Card>
-                })}
+                    </Card>
+                    })}
+                </AboutCard>
             </AboutWraper>
         </Container>
     )

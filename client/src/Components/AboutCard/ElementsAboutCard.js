@@ -13,3 +13,13 @@ export const ImgCard = styled.img`
 
     
 `;
+
+export const Description = styled.div`
+    border-top: 4px solid #DBC5DC;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const Texts = styled.span` 
+    font-size: 10px;
+`;

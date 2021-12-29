@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {
     Container,
     ContactWraper,
@@ -15,6 +15,26 @@ import InputText from '../InputText/InputText'
 import Button  from '../GenerealButton/GeneralButton'
 
 function ContactUs() {
+    const initialValue = {
+        name:'',
+        email:'',
+        phoneNumber:'',
+        projectName:''
+    }
+    const [values,setValues] = useState(initialValue)
+    const {
+        name,
+        email,
+        phoneNumber,
+        projectName
+    } = values
+    
+    const onChange = (e) => {
+        const {name, value} = e.target
+        setValues({...values,[name]: value})
+    }
+    console.log(values);
+ 
     return (
         <Container id='contact'>
             <ContactWraper>
@@ -23,10 +43,39 @@ function ContactUs() {
                         <Title>
                             Say Something
                         </Title>
-                        <InputText text="Name" type ='text' placeholder="reyand oneil"/>
-                        <InputText text="Email" type ='email' placeholder="reyand@mail.com"/>
-                        <InputText text="Phone Number" type ='text' placeholder="081320241318"/>
-                        <InputText text="Project Name" type ='text' placeholder="owsome project"/>
+                        <InputText 
+                        text="Name" 
+                        type ='text' 
+                        name='name'
+                        placeholder="reyand oneil"
+                        value={name}
+                        onChange={onChange}
+                        />
+                        <InputText 
+                        text="Email" 
+                        type ='email' 
+                        name='email'
+                        placeholder="reyand@mail.com"
+                        value={email}
+                        onChange={onChange}
+                        />
+                        <InputText 
+                        text="Phone Number" 
+                        type ='text' 
+                        name='phoneNumber'
+                        placeholder="081320241318"
+                        value={phoneNumber}
+                        onChange={onChange}
+
+                        />
+                        <InputText 
+                        text="Project Name" 
+                        type ='text' 
+                        name='projectName'
+                        placeholder="owsome project"
+                        value={projectName}
+                        onChange={onChange}
+                        />
                         <Button text="send"/>
                     </RightContentWraper>
                 </RightContent>
