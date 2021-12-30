@@ -13,12 +13,13 @@ export const Label = styled.span`
 `;
 
 export const InputTexts = styled.input`
-    margin-right: 20vw;
+    margin-right: 18vw;
     border: none;
     background-color: #DBC5DC;
     padding: 10px;
     border-radius: 20px;
     color: black;
+    font-size: 1rem;
 
     @media only screen and (max-width: 600px) {
         margin-right:0vw;

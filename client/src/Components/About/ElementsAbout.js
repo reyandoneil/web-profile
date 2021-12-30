@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const ReactStack = styled.div`
-    height: 30%;
+    height: 15%;
     width: 100%;
     background-color: #DBC5DC;
     display: flex;
