@@ -25,7 +25,7 @@ function Navbar({ active, toggle }) {
     const handleToggle = () => {
         setValue(!value)
     }
-    console.log(active,'active');
+   
     return (
 
         <Container active={active} >

@@ -13,7 +13,6 @@ const initialState = {
       case IsPopUp:
         return { ...state, PopupStatus:payload };
         case PopupContent:
-          console.log(payload,'ini di reducer');
           return { ...state, des:payload };
       default:
         return state; 

@@ -22,7 +22,6 @@ export const OpenPopUp = () => {
         try {
             return onSuccess()
         } catch (error) {
-            console.log('is ndak masuk');
             return onError()
         }
     }

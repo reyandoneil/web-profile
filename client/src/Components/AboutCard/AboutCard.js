@@ -7,7 +7,7 @@ import {
 } from './ElementsAboutCard'
 
 function AboutCard({src,title, date}) {
-    console.log(src,'ini gambarnya');
+    
     return (
         <CardWraper>
             <ImgCard src={src}/>

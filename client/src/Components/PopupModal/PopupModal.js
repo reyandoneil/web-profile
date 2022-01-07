@@ -17,8 +17,7 @@ import {useSelector} from 'react-redux'
 
 
 function PopupModal() {
-    const PopupContents = useSelector((state) => state.PopupReducer.des)
-    console.log(PopupContents,'ini di modal');
+    const PopupContents = useSelector((state) => state.PopupReducer.des);
     useLockBodyScroll()
     const wrapperRef = createRef();
     const dispatch = useDispatch()
